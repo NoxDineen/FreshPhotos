@@ -1,0 +1,404 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "photos/views.py.bak.py",
+			"settings":
+			{
+				"buffer_size": 1174,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "templates/photo.html",
+			"settings":
+			{
+				"buffer_size": 477,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "photos/admin.py",
+			"settings":
+			{
+				"buffer_size": 640,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "settings.py",
+			"settings":
+			{
+				"buffer_size": 5165,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "urls.py",
+			"settings":
+			{
+				"buffer_size": 896,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "photos/models.py",
+			"settings":
+			{
+				"buffer_size": 708,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "photos/views.py",
+			"settings":
+			{
+				"buffer_size": 568,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/noxdineen/code/freshphotos/templates/gallery.html",
+		"/Users/noxdineen/code/freshphotos/photos/views.py",
+		"/Users/noxdineen/code/freshphotos/urls.py",
+		"/Users/noxdineen/code/freshphotos/settings.py",
+		"/Users/noxdineen/code/freshphotos/photos/admin.py",
+		"/Users/noxdineen/code/freshphotos/photos/models.py",
+		"/Users/noxdineen/Library/Application Support/Sublime Text 2/Packages/User/Base File.sublime-settings",
+		"/Users/noxdineen/code/freshphotos/manage.py",
+		"/Users/noxdineen/code/freshphotos/freshdb",
+		"/Users/noxdineen/code/schedgy2/schedgy2.sublime-project",
+		"/Users/noxdineen/code/schedgy2/urls.py",
+		"/Users/noxdineen/code/schedgy2/settings.py",
+		"/Users/noxdineen/Library/Application Support/Sublime Text 2/Packages/Default/Global.sublime-settings"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"templat"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "photos/views.py.bak.py",
+					"settings":
+					{
+						"buffer_size": 1174,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1173,
+								1173
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "templates/photo.html",
+					"settings":
+					{
+						"buffer_size": 477,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								100,
+								100
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "photos/admin.py",
+					"settings":
+					{
+						"buffer_size": 640,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								367,
+								367
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 3,
+					"file": "settings.py",
+					"settings":
+					{
+						"buffer_size": 5165,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4097,
+								4097
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1382.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "urls.py",
+					"settings":
+					{
+						"buffer_size": 896,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								824,
+								824
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "photos/models.py",
+					"settings":
+					{
+						"buffer_size": 708,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								708,
+								708
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 82.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "photos/views.py",
+					"settings":
+					{
+						"buffer_size": 568,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true
+}

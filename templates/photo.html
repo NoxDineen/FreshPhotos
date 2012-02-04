@@ -1,0 +1,25 @@
+<html>
+<head>
+	<title> Page title goes here </title></head>
+</head>
+
+<body>
+	<h1>{{photo.name}}</h1>
+	<p>{{photo.description}}</p>
+	<p><img src="{{photo.filename.url}}" height="500"/><br />
+	Photo uploaded on: {{photo.created}}, currently visible to 
+
+	{% if photo.visible_by == 'AD' %}
+		<strong>Admin users only</strong>
+	{% endif %}	
+	</p>
+
+	<p>Galleries:
+	<ul>
+	{% for gallery in photo.galleries.all %}
+		<li>{{gallery.name}}</li>
+	{% endfor %}
+	</ul>
+	</p>
+</body>
+</html>
