@@ -22,3 +22,6 @@ class Photo(models.Model):
 	created = models.DateTimeField(auto_now_add=True)
 	galleries = models.ManyToManyField('photos.Gallery')
 	visible_by = models.CharField(max_length=2, choices=VISIBLE_BY_CHOICES)
+
+	def __unicode__(self):
+		return self.name

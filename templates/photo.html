@@ -1,14 +1,16 @@
 <html>
 <head>
-	<title> Page title goes here </title></head>
+	<title> {{photo.name}} Detail </title></head>
 </head>
 
 <body>
 	<h1>{{photo.name}}</h1>
 	<p>{{photo.description}}</p>
 	<p><img src="{{photo.filename.url}}" height="500"/><br />
-	Photo uploaded on: {{photo.created}}, currently visible to 
+	Photo uploaded {{photo.created|timesince}} ago.
+	
 
+	<br />Currently visible to 
 	{% if photo.visible_by == 'AD' %}
 		<strong>Admin users only</strong>
 	{% endif %}	
@@ -17,7 +19,7 @@
 	<p>Galleries:
 	<ul>
 	{% for gallery in photo.galleries.all %}
-		<li>{{gallery.name}}</li>
+		<li><a href="/gallery/{{gallery.name}}">{{gallery.name}}</a></li>
 	{% endfor %}
 	</ul>
 	</p>
