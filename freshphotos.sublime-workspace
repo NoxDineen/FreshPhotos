@@ -8,18 +8,18 @@
 	"buffers":
 	[
 		{
-			"file": "photos/views.py.bak.py",
+			"file": "templates/photo.html",
 			"settings":
 			{
-				"buffer_size": 1174,
+				"buffer_size": 537,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "templates/photo.html",
+			"file": "templates/gallery.html",
 			"settings":
 			{
-				"buffer_size": 477,
+				"buffer_size": 560,
 				"line_ending": "Unix"
 			}
 		},
@@ -32,18 +32,29 @@
 			}
 		},
 		{
-			"file": "settings.py",
+			"contents": "from django.http import HttpResponse\nfrom photos.models import Gallery\nfrom photos.models import Photo\nfrom django.http import Http404\nfrom django.shortcuts import render\n\ndef gallery(request, gallery_key):\n    try:\n    	if gallery_key.isdigit():\n        	mygallery = Gallery.objects.get(id=gallery_key)\n        else:\n        	mygallery = Gallery.objects.get(name=gallery_key)\n    except Gallery.DoesNotExist:\n        raise Http404\n    context = {'gallery' ⁄: mygallery}\n    return render(request, \"gallery.html\", context)\n        \n    \ndef photo(request, photo_key):\n	try:\n		if photo_key.isdigit():\n			myphoto = Photo.objects.get(id=photo_key)\n		else:\n			myphoto = Photo.objects.get(name=photo_key)\n	except Photo.DoesNotExist:\n		raise Http404\n	context = {'photo': myphoto}\n	return render(request, \"photo.html\", context)\n    \n",
+			"file": "photos/views.py",
+			"file_size": 854,
+			"file_write_time": 1328382711000000,
 			"settings":
 			{
-				"buffer_size": 5165,
-				"line_ending": "Unix"
+				"buffer_size": 826,
+				"line_ending": "Windows"
 			}
 		},
 		{
 			"file": "urls.py",
 			"settings":
 			{
-				"buffer_size": 896,
+				"buffer_size": 862,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "settings.py",
+			"settings":
+			{
+				"buffer_size": 5153,
 				"line_ending": "Unix"
 			}
 		},
@@ -51,16 +62,8 @@
 			"file": "photos/models.py",
 			"settings":
 			{
-				"buffer_size": 708,
+				"buffer_size": 752,
 				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "photos/views.py",
-			"settings":
-			{
-				"buffer_size": 568,
-				"line_ending": "Windows"
 			}
 		}
 	],
@@ -88,6 +91,8 @@
 	},
 	"file_history":
 	[
+		"/Users/nox/Code/freshphotos/templates/gallery.html",
+		"/Users/nox/Code/freshphotos/photos/views.py.bak.py",
 		"/Users/noxdineen/code/freshphotos/templates/gallery.html",
 		"/Users/noxdineen/code/freshphotos/photos/views.py",
 		"/Users/noxdineen/code/freshphotos/urls.py",
@@ -136,28 +141,28 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 6,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "photos/views.py.bak.py",
+					"file": "templates/photo.html",
 					"settings":
 					{
-						"buffer_size": 1174,
+						"buffer_size": 537,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1173,
-								1173
+								45,
+								45
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Python/Python.tmLanguage",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
@@ -168,18 +173,18 @@
 				},
 				{
 					"buffer": 1,
-					"file": "templates/photo.html",
+					"file": "templates/gallery.html",
 					"settings":
 					{
-						"buffer_size": 477,
+						"buffer_size": 560,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								100,
-								100
+								488,
+								488
 							]
 						],
 						"settings":
@@ -211,44 +216,37 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/Python/Python.tmLanguage"
+							"syntax": "Packages/Djaneiro/Python Django.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 0,
-			"sheets":
-			[
+				},
 				{
 					"buffer": 3,
-					"file": "settings.py",
+					"file": "photos/views.py",
 					"settings":
 					{
-						"buffer_size": 5165,
+						"buffer_size": 826,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4097,
-								4097
+								458,
+								458
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Python/Python.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Djaneiro/Python Django.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1382.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -258,20 +256,20 @@
 					"file": "urls.py",
 					"settings":
 					{
-						"buffer_size": 896,
+						"buffer_size": 862,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								824,
-								824
+								686,
+								686
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Python/Python.tmLanguage"
+							"syntax": "Packages/Djaneiro/Python Django.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -281,50 +279,51 @@
 				},
 				{
 					"buffer": 5,
-					"file": "photos/models.py",
+					"file": "settings.py",
 					"settings":
 					{
-						"buffer_size": 708,
+						"buffer_size": 5153,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								708,
-								708
+								1765,
+								1765
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/Python/Python.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
-						"translation.x": 82.0,
-						"translation.y": 0.0,
+						"translation.x": 0.0,
+						"translation.y": 1248.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 6,
-					"file": "photos/views.py",
+					"file": "photos/models.py",
 					"settings":
 					{
-						"buffer_size": 568,
+						"buffer_size": 752,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								215,
+								215
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Python/Python.tmLanguage",
+							"syntax": "Packages/Djaneiro/Python Django.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
@@ -353,18 +352,11 @@
 				0,
 				1,
 				1
-			],
-			[
-				1,
-				0,
-				2,
-				1
 			]
 		],
 		"cols":
 		[
 			0.0,
-			0.5,
 			1.0
 		],
 		"rows":
