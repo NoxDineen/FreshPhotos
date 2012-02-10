@@ -12,7 +12,7 @@
 	{% for photo in gallery.photo_set.all %}
 
 	{% if photo = gallery.best_photo %}
-	<a href="/photo/{{photo.id}}"><img src="{{photo.filename.url}}" height="200" /></a>
+	<a href="/photo/{{photo.id}}"><img src="{{photo.filename.url}}" height="150" caption="Best!" /></a>
 	{% else %}
 	<a href="/photo/{{photo.id}}"><img src="{{photo.filename.url}}" height="150" /></a>
 	{% endif %}
