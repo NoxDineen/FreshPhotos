@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>{{ photo.name }} Detail</title>
+		<link rel="stylesheet" href="/static/styles/base-style.css" />
+	</head>
+
+<body>
+	<div id="container">
+
+	<section id="page-header">
+	<img src="path/to/logo.png" alt="FreshPhotos" />
+
+		<ul>
+			<li><a href="/test">Home</a></li>
+			<li><a href="/galleries">Galleries</a></li>
+		</ul>
+	</section>
+
+	<section id="page-body">
+		<p><img src="{{ photo.filename.url }}" alt="{{ photo.name }}" height="500"></p>
+
+		<article class="meta-info">
+		<h1>{{ photo.name|upper}}</h1>
+
+		<p> {{ photo.blurb }} </p>
+
+		<p>This awesome photo was uploaded {{photo.created|timesince}} ago.</p>
+	</article>
+
+	</section>
+
+	</div>
+</body>
+</html>

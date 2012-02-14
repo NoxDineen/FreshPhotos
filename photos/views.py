@@ -25,5 +25,5 @@ def photo(request, photo_key):
 	except Photo.DoesNotExist:
 		raise Http404
 	context = {'photo': myphoto}
-	return render(request, "photo.html", context)
+	return render(request, "photo-detail.html", context)
     
