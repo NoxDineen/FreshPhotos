@@ -18,7 +18,7 @@ class Photo(models.Model):
 		(u'EV', u'Everybody'),
 	)
 	name = models.CharField(max_length=100)
-	# blurb = models.TextField(max_length=1500, blank=True)
+	# blurb = models.TextField(blank=True)
 	filename = models.FileField(upload_to='photos')
 	created = models.DateTimeField(auto_now_add=True)
 	galleries = models.ManyToManyField('photos.Gallery')
