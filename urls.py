@@ -4,6 +4,7 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
     url(r'^gallery/([\w-]+)/$', 'freshphotos.photos.views.gallery'),
+    url(r'^gallery/([\w-]+)/(carousel)/$', 'freshphotos.photos.views.gallery'),
     url(r'^photo/([\w-]+)/$', 'freshphotos.photos.views.photo'),
     # Examples:
     # url(r'^$', 'freshphotos.views.home', name='home'),

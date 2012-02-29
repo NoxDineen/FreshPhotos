@@ -76,3 +76,36 @@ h1 {
     padding-bottom: 5px;
     margin-bottom: 5px;
 }
+
+.full-content #page-content {
+    position: absolute;
+    left: 0px;
+}
+
+#carousel {
+    overflow: hidden;
+}
+
+#carousel ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    white-space: nowrap;
+}
+
+#carousel .animate {
+    -webkit-transition: all 0.9s ease-in-out;
+    -moz-transition: all 0.9s ease-in-out;
+    -o-transition: all 0.9s ease-in-out;
+    -ms-transition: all 0.9s ease-in-out;
+    transition: all 0.9s ease-in-out;
+}
+
+#carousel li {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0 10px 0 0;
+}

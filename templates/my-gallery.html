@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>page title</title>
+        <link rel="stylesheet" href="/static/styles/base-style.css" />
+    </head>
+    <body class="full-content">
+        <div id="container">
+            <section id="page-header">
+                <img src="/static/images/shamrock.png" alt="FreshPhotos Logo" height="50" />
+                <ul>
+                    <li><a href="path/to/home-page/">Home</a></li>
+                    <li><a href="path/to/galleries/">Galleries</a></li>
+                </ul>
+            </section>
+            <section id="page-content">
+                <div id="carousel">
+                    <a href="#todo" class="next"> Next </a>
+                    <ul>
+                        <li><img src="http://c759846.r46.cf2.rackcdn.com/gallery/2007/03/118244_1316217579_gallery_image_116446.jpg" alt="" /></li>
+                        <li><img src="http://c759846.r46.cf2.rackcdn.com/gallery/2007/03/118276_1316217579_gallery_image_116388.jpg" alt="" /></li>
+                        <li><img src="http://c759846.r46.cf2.rackcdn.com/gallery/2007/03/118292_1316217579_gallery_image_116401.jpg" alt="" /></li>
+                        <li><img src="http://c759846.r46.cf2.rackcdn.com/gallery/2007/03/118357_1316217579_gallery_image_115760.jpg" alt="" /></li>
+                        <li><img src="http://c759846.r46.cf2.rackcdn.com/gallery/2007/03/118308_1316217579_gallery_image_115792.jpg" alt="" /></li>
+                        <li><img src="http://c759846.r46.cf2.rackcdn.com/gallery/2007/03/118324_1316217579_gallery_image_115734.jpg" alt="" /></li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+
+        <script type="text/javascript" src="{{ STATIC_URL }}scripts/jquery.min.js"></script>
+        <script type="text/javascript" src="{{ STATIC_URL }}scripts/carousel.js"></script>
+    </body>
+</html>

@@ -4,7 +4,7 @@ from photos.models import Photo
 from django.http import Http404
 from django.shortcuts import render
 
-def gallery(request, gallery_key):
+def gallery(request, gallery_key, view='grid'):
     try:
     	if gallery_key.isdigit():
         	mygallery = Gallery.objects.get(id=gallery_key)
@@ -13,7 +13,7 @@ def gallery(request, gallery_key):
     except Gallery.DoesNotExist:
         raise Http404
     context = {'gallery' : mygallery}
-    return render(request, "gallery.html", context)
+    return render(request, "my-gallery.html", context)
         
     
 def photo(request, photo_key):

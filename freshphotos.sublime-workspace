@@ -27,16 +27,8 @@
 			"file": "photos/views.py",
 			"settings":
 			{
-				"buffer_size": 832,
+				"buffer_size": 848,
 				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "urls.py",
-			"settings":
-			{
-				"buffer_size": 809,
-				"line_ending": "Unix"
 			}
 		},
 		{
@@ -51,7 +43,7 @@
 			"file": "photos/models.py",
 			"settings":
 			{
-				"buffer_size": 809,
+				"buffer_size": 792,
 				"line_ending": "Unix"
 			}
 		},
@@ -59,7 +51,23 @@
 			"file": "static/styles/base-style.css",
 			"settings":
 			{
-				"buffer_size": 460,
+				"buffer_size": 1224,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "templates/my-gallery.html",
+			"settings":
+			{
+				"buffer_size": 1717,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "urls.py",
+			"settings":
+			{
+				"buffer_size": 889,
 				"line_ending": "Unix"
 			}
 		},
@@ -67,7 +75,7 @@
 			"file": "templates/photo-detail.html",
 			"settings":
 			{
-				"buffer_size": 694,
+				"buffer_size": 744,
 				"line_ending": "Unix"
 			}
 		},
@@ -154,7 +162,7 @@
 	"groups":
 	[
 		{
-			"selected": 6,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -216,15 +224,15 @@
 					"file": "photos/views.py",
 					"settings":
 					{
-						"buffer_size": 832,
+						"buffer_size": 848,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								810,
-								810
+								514,
+								514
 							]
 						],
 						"settings":
@@ -240,32 +248,6 @@
 				},
 				{
 					"buffer": 3,
-					"file": "urls.py",
-					"settings":
-					{
-						"buffer_size": 809,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								60,
-								60
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
 					"file": "settings.py",
 					"settings":
 					{
@@ -276,8 +258,8 @@
 						"selection":
 						[
 							[
-								2852,
-								2852
+								141,
+								141
 							]
 						],
 						"settings":
@@ -287,25 +269,25 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 902.0,
+						"translation.y": 870.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 4,
 					"file": "photos/models.py",
 					"settings":
 					{
-						"buffer_size": 809,
+						"buffer_size": 792,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								198,
-								198
+								485,
+								485
 							]
 						],
 						"settings":
@@ -320,27 +302,29 @@
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 5,
 					"file": "static/styles/base-style.css",
 					"settings":
 					{
-						"buffer_size": 460,
+						"buffer_size": 1224,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								408,
-								408
+								276,
+								276
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/CSS/CSS.tmLanguage"
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 380.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -352,24 +336,50 @@
 			"sheets":
 			[
 				{
-					"buffer": 7,
-					"file": "templates/photo-detail.html",
+					"buffer": 6,
+					"file": "templates/my-gallery.html",
 					"settings":
 					{
-						"buffer_size": 694,
+						"buffer_size": 1717,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								532,
-								532
+								988,
+								988
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/Djaneiro/Syntaxes/HTML (Django).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 167.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "urls.py",
+					"settings":
+					{
+						"buffer_size": 889,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								251,
+								251
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -379,6 +389,33 @@
 				},
 				{
 					"buffer": 8,
+					"file": "templates/photo-detail.html",
+					"settings":
+					{
+						"buffer_size": 744,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								719,
+								719
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Djaneiro/Syntaxes/HTML (Django).tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
 					"file": "photos/admin.py",
 					"settings":
 					{
