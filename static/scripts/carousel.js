@@ -1,4 +1,4 @@
-// calculate the screen width and apply to carrousel
+// calculate the screen width and apply to carousel
 $(window).load(function(){
     var view_width = $(window).width() - 20;
 
@@ -13,7 +13,7 @@ $(window).load(function(){
     // move ul to the intial position
     $('#carousel ul').attr('style', '-webkit-transform: translate3d('+left+'px, 0px, 0px);');
 
-    // attach event to the carrousel
+    // attach event to the carousel
     $('#carousel .next').click(function() {
         var img_width = $('#carousel ul li.active').next().width();
         var left = ((view_width - img_width) / 2) - $('#carousel ul li.active').width();

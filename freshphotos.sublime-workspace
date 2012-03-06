@@ -24,14 +24,6 @@
 			}
 		},
 		{
-			"file": "photos/views.py",
-			"settings":
-			{
-				"buffer_size": 848,
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "settings.py",
 			"settings":
 			{
@@ -48,10 +40,27 @@
 			}
 		},
 		{
+			"file": "static/scripts/carousel.js",
+			"settings":
+			{
+				"buffer_size": 981,
+				"line_ending": "Unix",
+				"name": "yay"
+			}
+		},
+		{
 			"file": "static/styles/base-style.css",
 			"settings":
 			{
-				"buffer_size": 1224,
+				"buffer_size": 1824,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "photos/admin.py",
+			"settings":
+			{
+				"buffer_size": 640,
 				"line_ending": "Unix"
 			}
 		},
@@ -59,15 +68,7 @@
 			"file": "templates/my-gallery.html",
 			"settings":
 			{
-				"buffer_size": 1717,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "urls.py",
-			"settings":
-			{
-				"buffer_size": 889,
+				"buffer_size": 1889,
 				"line_ending": "Unix"
 			}
 		},
@@ -80,11 +81,11 @@
 			}
 		},
 		{
-			"file": "photos/admin.py",
+			"file": "photos/views.py",
 			"settings":
 			{
-				"buffer_size": 640,
-				"line_ending": "Unix"
+				"buffer_size": 848,
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -112,6 +113,8 @@
 	},
 	"file_history":
 	[
+		"/Users/nox/Code/freshphotos/urls.py",
+		"/Users/nox/Code/freshphotos/photos/admin.py",
 		"/Users/nox/Code/freshphotos/templates/gallery.html",
 		"/Users/nox/Code/freshphotos/photos/views.py.bak.py",
 		"/Users/noxdineen/code/freshphotos/templates/gallery.html",
@@ -162,7 +165,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -221,33 +224,6 @@
 				},
 				{
 					"buffer": 2,
-					"file": "photos/views.py",
-					"settings":
-					{
-						"buffer_size": 848,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								514,
-								514
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
 					"file": "settings.py",
 					"settings":
 					{
@@ -269,13 +245,13 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 870.0,
+						"translation.y": 480.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 3,
 					"file": "photos/models.py",
 					"settings":
 					{
@@ -286,8 +262,8 @@
 						"selection":
 						[
 							[
-								485,
-								485
+								336,
+								336
 							]
 						],
 						"settings":
@@ -302,19 +278,48 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "static/styles/base-style.css",
+					"buffer": 4,
+					"file": "static/scripts/carousel.js",
 					"settings":
 					{
-						"buffer_size": 1224,
+						"buffer_size": 981,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								276,
-								276
+								46,
+								46
+							]
+						],
+						"settings":
+						{
+							"auto_name": "yay",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "static/styles/base-style.css",
+					"settings":
+					{
+						"buffer_size": 1824,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1475,
+								1475
 							]
 						],
 						"settings":
@@ -324,7 +329,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 380.0,
+						"translation.y": 1089.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -337,44 +342,18 @@
 			[
 				{
 					"buffer": 6,
-					"file": "templates/my-gallery.html",
+					"file": "photos/admin.py",
 					"settings":
 					{
-						"buffer_size": 1717,
+						"buffer_size": 640,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								988,
-								988
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Djaneiro/Syntaxes/HTML (Django).tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 167.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "urls.py",
-					"settings":
-					{
-						"buffer_size": 889,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								251,
-								251
+								640,
+								559
 							]
 						],
 						"settings":
@@ -383,6 +362,34 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "templates/my-gallery.html",
+					"settings":
+					{
+						"buffer_size": 1889,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								238,
+								238
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Djaneiro/Syntaxes/HTML (Django).tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 111.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -416,23 +423,24 @@
 				},
 				{
 					"buffer": 9,
-					"file": "photos/admin.py",
+					"file": "photos/views.py",
 					"settings":
 					{
-						"buffer_size": 640,
+						"buffer_size": 848,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								374,
-								374
+								514,
+								514
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage"
+							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
