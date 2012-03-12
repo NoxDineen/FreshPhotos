@@ -1,8 +1,10 @@
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseRedirect
 from photos.models import Gallery
 from photos.models import Photo
+from photos.models import Comment
 from django.http import Http404
 from django.shortcuts import render
+from photos.forms import CommentForm
 
 def gallery(request, gallery_key, view='grid'):
     try:
@@ -15,15 +17,46 @@ def gallery(request, gallery_key, view='grid'):
     context = {'gallery' : mygallery}
     return render(request, "my-gallery.html", context)
         
-    
-def photo(request, photo_key):
+
+def photo(request, photo_id):
 	try:
-		if photo_key.isdigit():
-			myphoto = Photo.objects.get(id=photo_key)
-		else:
-			myphoto = Photo.objects.get(name=photo_key)
+		myphoto = Photo.objects.get(id=photo_id)
 	except Photo.DoesNotExist:
 		raise Http404
-	context = {'photo': myphoto}
-	return render(request, "photo-detail.html", context)
+	if request.method =='POST':
+		form = CommentForm(request.POST)
+		if form.is_valid():
+			new_comment = Comment()
+			new_comment.comment = form.cleaned_data['comment']
+			new_comment.name = form.cleaned_data['name']
+			new_comment.email = form.cleaned_data['email']
+			new_comment.photo_id = myphoto.id
+			new_comment.save()
+			return HttpResponseRedirect('/photo/%d' % myphoto.id)
+	else:
+		form = CommentForm()
+	comments = Comment.objects.filter(photo=photo_id)
+	return render(request, 'photo-detail.html', {'photo' : myphoto, 'form' : form, comments = 'comments'})
+    
+# def photo(request, photo_key):
+# 	try:
+# 		if photo_key.isdigit():
+# 			myphoto = Photo.objects.get(id=photo_key)
+# 			if request.method == 'POST':
+# 				form = CommentForm(request.POST)
+# 				if form.is_valid:
+# 					new_comment = Comment()
+# 					new_comment.comment = form.cleaned_data['comment']
+# 					new_comment.email = form.cleaned_data['email']
+# 					new_comment.name = form.cleaned_data['name']
+# 					new_comment.photo_id = myphoto.id
+# 					new_comment.save()
+# 					return HttpResponseRedirect('/photo/%d' % myphoto.id)
+# 			else:
+# 				form = CommentForm()
+# 		else:
+# 			myphoto = Photo.objects.get(name=photo_key)
+# 	except Photo.DoesNotExist:
+# 		raise Http404
+# 	return render(request, "photo-detail.html", {"photo": myphoto, 'form': form})
     

@@ -15,8 +15,8 @@ $(window).load(function(){
 
     // attach event to the carousel
     $('#carousel .next').click(function() {
-        var img_width = $('#carousel ul li.active').next().width();
-        var left = ((view_width - img_width) / 2) - $('#carousel ul li.active').width();
+        var img_width = $('#carousel ul li.active').next().position().left;
+        var left = ((view_width - img_width) / 2) - $('#carousel ul li.active').width(); 
 
         $('#carousel ul').addClass('animate');
         var new_position = "translate3d(" + left + "px, 0px, 0px)";

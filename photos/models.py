@@ -26,3 +26,9 @@ class Photo(models.Model):
 
 	def __unicode__(self):
 		return self.name
+
+class Comment(models.Model):
+	name = models.CharField(max_length=255)
+	email = models.EmailField(max_length=255)
+	comment = models.TextField(max_length=2500)
+	photo = models.ForeignKey('photo')

@@ -26,6 +26,19 @@
 		<p> {{ photo.blurb }} </p>
 
 		<p>This awesome photo was uploaded {{photo.created|timesince}} ago.</p>
+
+		<div id='comment-form'>
+		<form method="post" action="" >{% csrf_token %}
+		<ul>
+		    {{ form.as_ul }}
+		     <li><input type="submit" value="Add my comment" /></li>
+		</ul>
+		</form>
+		</div>
+
+		{% for comment in comments %}
+		<p><a href="mailto:{{comment.email}}">{{comment.name}}</a> says: {{comment.comment}}</p>
+
 	</article>
 
 	</section>

@@ -43,7 +43,7 @@
 			"file": "static/scripts/carousel.js",
 			"settings":
 			{
-				"buffer_size": 981,
+				"buffer_size": 990,
 				"line_ending": "Unix",
 				"name": "yay"
 			}
@@ -165,7 +165,7 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 4,
 			"sheets":
 			[
 				{
@@ -282,15 +282,15 @@
 					"file": "static/scripts/carousel.js",
 					"settings":
 					{
-						"buffer_size": 981,
+						"buffer_size": 990,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								46,
-								46
+								621,
+								621
 							]
 						],
 						"settings":
@@ -329,17 +329,11 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1089.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 0,
-			"sheets":
-			[
+				},
 				{
 					"buffer": 6,
 					"file": "photos/admin.py",
@@ -389,7 +383,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 111.0,
+						"translation.y": 103.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -468,18 +462,11 @@
 				0,
 				1,
 				1
-			],
-			[
-				1,
-				0,
-				2,
-				1
 			]
 		],
 		"cols":
 		[
 			0.0,
-			0.5,
 			1.0
 		],
 		"rows":
