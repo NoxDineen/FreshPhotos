@@ -23,8 +23,6 @@
 		<article class="meta-info">
 		<h1>{{ photo.name|upper}}</h1>
 
-		<p> {{ photo.blurb }} </p>
-
 		<p>This awesome photo was uploaded {{photo.created|timesince}} ago.</p>
 
 		<div id='comment-form'>
@@ -36,9 +34,11 @@
 		</form>
 		</div>
 
+		<div id="comments">
 		{% for comment in comments %}
 		<p><a href="mailto:{{comment.email}}">{{comment.name}}</a> says: {{comment.comment}}</p>
-
+		{% endfor %}
+		</div>
 	</article>
 
 	</section>

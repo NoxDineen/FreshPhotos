@@ -36,27 +36,5 @@ def photo(request, photo_id):
 	else:
 		form = CommentForm()
 	comments = Comment.objects.filter(photo=photo_id)
-	return render(request, 'photo-detail.html', {'photo' : myphoto, 'form' : form, comments = 'comments'})
-    
-# def photo(request, photo_key):
-# 	try:
-# 		if photo_key.isdigit():
-# 			myphoto = Photo.objects.get(id=photo_key)
-# 			if request.method == 'POST':
-# 				form = CommentForm(request.POST)
-# 				if form.is_valid:
-# 					new_comment = Comment()
-# 					new_comment.comment = form.cleaned_data['comment']
-# 					new_comment.email = form.cleaned_data['email']
-# 					new_comment.name = form.cleaned_data['name']
-# 					new_comment.photo_id = myphoto.id
-# 					new_comment.save()
-# 					return HttpResponseRedirect('/photo/%d' % myphoto.id)
-# 			else:
-# 				form = CommentForm()
-# 		else:
-# 			myphoto = Photo.objects.get(name=photo_key)
-# 	except Photo.DoesNotExist:
-# 		raise Http404
-# 	return render(request, "photo-detail.html", {"photo": myphoto, 'form': form})
+	return render(request, 'photo-detail.html', {'photo' : myphoto, 'form' : form, 'comments' : comments})
     

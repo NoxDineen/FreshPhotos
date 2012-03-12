@@ -18,7 +18,6 @@ class Photo(models.Model):
 		(u'EV', u'Everybody'),
 	)
 	name = models.CharField(max_length=100)
-	# blurb = models.TextField(blank=True)
 	filename = models.FileField(upload_to='photos')
 	created = models.DateTimeField(auto_now_add=True)
 	galleries = models.ManyToManyField('photos.Gallery')
@@ -31,4 +30,7 @@ class Comment(models.Model):
 	name = models.CharField(max_length=255)
 	email = models.EmailField(max_length=255)
 	comment = models.TextField(max_length=2500)
-	photo = models.ForeignKey('photo')
+	photo = models.ForeignKey('photos.Photo', blank=False, null=False)
+
+	def __unicode__(self):
+		return self.name

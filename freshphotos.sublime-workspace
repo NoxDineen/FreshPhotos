@@ -3,16 +3,36 @@
 	{
 		"selected_items":
 		[
+			[
+				"HttpResponse",
+				"HttpResponseRedirect"
+			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "templates/photo.html",
+			"file": "settings.py",
 			"settings":
 			{
-				"buffer_size": 537,
+				"buffer_size": 5195,
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "photos/admin.py",
+			"settings":
+			{
+				"buffer_size": 801,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "photos/views.py",
+			"settings":
+			{
+				"buffer_size": 1334,
+				"line_ending": "Windows"
 			}
 		},
 		{
@@ -24,10 +44,10 @@
 			}
 		},
 		{
-			"file": "settings.py",
+			"file": "templates/photo-detail.html",
 			"settings":
 			{
-				"buffer_size": 5195,
+				"buffer_size": 1081,
 				"line_ending": "Unix"
 			}
 		},
@@ -35,57 +55,8 @@
 			"file": "photos/models.py",
 			"settings":
 			{
-				"buffer_size": 792,
+				"buffer_size": 1023,
 				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "static/scripts/carousel.js",
-			"settings":
-			{
-				"buffer_size": 990,
-				"line_ending": "Unix",
-				"name": "yay"
-			}
-		},
-		{
-			"file": "static/styles/base-style.css",
-			"settings":
-			{
-				"buffer_size": 1824,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "photos/admin.py",
-			"settings":
-			{
-				"buffer_size": 640,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "templates/my-gallery.html",
-			"settings":
-			{
-				"buffer_size": 1889,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "templates/photo-detail.html",
-			"settings":
-			{
-				"buffer_size": 744,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "photos/views.py",
-			"settings":
-			{
-				"buffer_size": 848,
-				"line_ending": "Windows"
 			}
 		}
 	],
@@ -113,6 +84,13 @@
 	},
 	"file_history":
 	[
+		"/Users/nox/Code/freshphotos/static/styles/base-style.css",
+		"/Users/nox/Code/freshphotos/templates/photo.html",
+		"/Users/nox/Code/freshphotos/photos/forms.py",
+		"/Users/nox/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/Users/nox/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/Users/nox/Code/freshphotos/templates/my-gallery.html",
+		"/Users/nox/Code/freshphotos/static/scripts/carousel.js",
 		"/Users/nox/Code/freshphotos/urls.py",
 		"/Users/nox/Code/freshphotos/photos/admin.py",
 		"/Users/nox/Code/freshphotos/templates/gallery.html",
@@ -165,65 +143,11 @@
 	"groups":
 	[
 		{
-			"selected": 4,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "templates/photo.html",
-					"settings":
-					{
-						"buffer_size": 537,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								537,
-								537
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "templates/gallery.html",
-					"settings":
-					{
-						"buffer_size": 576,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								309,
-								309
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
 					"file": "settings.py",
 					"settings":
 					{
@@ -245,25 +169,51 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 480.0,
+						"translation.y": 249.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "photos/models.py",
+					"buffer": 1,
+					"file": "photos/admin.py",
 					"settings":
 					{
-						"buffer_size": 792,
+						"buffer_size": 801,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								336,
-								336
+								674,
+								674
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "photos/views.py",
+					"settings":
+					{
+						"buffer_size": 1334,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								537,
+								537
 							]
 						],
 						"settings":
@@ -278,135 +228,24 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "static/scripts/carousel.js",
+					"buffer": 3,
+					"file": "templates/gallery.html",
 					"settings":
 					{
-						"buffer_size": 990,
+						"buffer_size": 576,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								621,
-								621
+								432,
+								432
 							]
 						],
 						"settings":
 						{
-							"auto_name": "yay",
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "static/styles/base-style.css",
-					"settings":
-					{
-						"buffer_size": 1824,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1475,
-								1475
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "photos/admin.py",
-					"settings":
-					{
-						"buffer_size": 640,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								640,
-								559
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "templates/my-gallery.html",
-					"settings":
-					{
-						"buffer_size": 1889,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								238,
-								238
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Djaneiro/Syntaxes/HTML (Django).tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 103.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "templates/photo-detail.html",
-					"settings":
-					{
-						"buffer_size": 744,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								719,
-								719
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Djaneiro/Syntaxes/HTML (Django).tmLanguage",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
@@ -416,19 +255,46 @@
 					"type": "text"
 				},
 				{
-					"buffer": 9,
-					"file": "photos/views.py",
+					"buffer": 4,
+					"file": "templates/photo-detail.html",
 					"settings":
 					{
-						"buffer_size": 848,
+						"buffer_size": 1081,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								514,
-								514
+								913,
+								913
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Djaneiro/Syntaxes/HTML (Django).tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 108.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "photos/models.py",
+					"settings":
+					{
+						"buffer_size": 1023,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								481,
+								481
 							]
 						],
 						"settings":
