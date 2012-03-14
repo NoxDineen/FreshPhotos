@@ -1,12 +1,12 @@
 // calculate the screen width and apply to carousel
 $(document).ready(function(){
-    var view_width = $(window).width() - 20;
+    var view_width = $(window).width();
 
     $('#carousel').css('width', view_width);
 
     $('#carousel ul li:first-child').addClass('active');
 
-    var img_width = $('#carousel ul li.active').width();
+    var img_width = $('#carousel ul li.active').outerwidth();
 
     var left = (view_width - img_width) / 2;
 
