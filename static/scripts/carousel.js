@@ -1,5 +1,5 @@
 // calculate the screen width and apply to carousel
-$(window).load(function(){
+$(document).ready(function(){
     var view_width = $(window).width() - 20;
 
     $('#carousel').css('width', view_width);
