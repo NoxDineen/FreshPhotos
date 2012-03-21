@@ -28,10 +28,13 @@
 			}
 		},
 		{
+			"contents": "from django.http import HttpResponse, HttpResponseRedirect\nfrom photos.models import Gallery\nfrom photos.models import Photo\nfrom photos.models import Comment\nfrom django.http import Http404\nfrom django.shortcuts import render\nfrom photos.forms import CommentForm\n\ndef gallery(request, gallery_key, view='grid'):\n    try:\n    	if gallery_key.isdigit():\n        	mygallery = Gallery.objects.get(id=gallery_key)\n        else:\n        	mygallery = Gallery.objects.get(name=gallery_key)\n    except Gallery.DoesNotExist:\n        raise Http404\n    context = {'gallery' : mygallery}\n    return render(request, \"my-gallery.html\", context)\n        \n\ndef photo(request, photo_id):\n	try:\n		myphoto = Photo.objects.get(id=photo_id)\n	except Photo.DoesNotExist:\n		raise Http404\n	if request.method =='POST':\n		form = CommentForm(request.POST)\n		if form.is_valid():\n			new_comment = Comment()\n			new_comment.comment = form.cleaned_data['comment']\n			new_comment.name = form.cleaned_data['name']\n			new_comment.email = form.cleaned_data['email']\n			new_comment.photo_id = myphoto.id\n			new_comment.save()\n			return HttpResponseRedirect('/photo/%d' % myphoto.id)\n	else:\n		form = CommentForm()\n	comments = Comment.objects.filter(photo=photo_id)\n	return render(request, 'photo-detail.html', {'photo' : myphoto, 'form' : form, 'comments' : comments})",
 			"file": "photos/views.py",
+			"file_size": 1373,
+			"file_write_time": 1331586711000000,
 			"settings":
 			{
-				"buffer_size": 1334,
+				"buffer_size": 1329,
 				"line_ending": "Windows"
 			}
 		},
@@ -63,7 +66,15 @@
 			"file": "static/scripts/carousel.js",
 			"settings":
 			{
-				"buffer_size": 990,
+				"buffer_size": 993,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "templates/my-gallery.html",
+			"settings":
+			{
+				"buffer_size": 1889,
 				"line_ending": "Unix"
 			}
 		}
@@ -92,6 +103,7 @@
 	},
 	"file_history":
 	[
+		"/Users/nox/Desktop/carousel.js",
 		"/Users/nox/Code/freshphotos/static/styles/base-style.css",
 		"/Users/nox/Code/freshphotos/templates/photo.html",
 		"/Users/nox/Code/freshphotos/photos/forms.py",
@@ -166,8 +178,8 @@
 						"selection":
 						[
 							[
-								141,
-								141
+								2814,
+								2852
 							]
 						],
 						"settings":
@@ -177,7 +189,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 249.0,
+						"translation.y": 1005.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -214,15 +226,15 @@
 					"file": "photos/views.py",
 					"settings":
 					{
-						"buffer_size": 1334,
+						"buffer_size": 1329,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								926,
-								926
+								1329,
+								1226
 							]
 						],
 						"settings":
@@ -275,8 +287,8 @@
 						"selection":
 						[
 							[
-								913,
-								913
+								369,
+								369
 							]
 						],
 						"settings":
@@ -285,7 +297,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 88.0,
+						"translation.y": 77.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -322,15 +334,15 @@
 					"file": "static/scripts/carousel.js",
 					"settings":
 					{
-						"buffer_size": 990,
+						"buffer_size": 993,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								169,
-								127
+								226,
+								226
 							]
 						],
 						"settings":
@@ -340,6 +352,34 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "templates/my-gallery.html",
+					"settings":
+					{
+						"buffer_size": 1889,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								75,
+								138
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Djaneiro/Syntaxes/HTML (Django).tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 1.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
