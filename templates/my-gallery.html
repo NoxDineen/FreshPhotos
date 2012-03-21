@@ -16,16 +16,29 @@
             <section id="page-content">
                 <div id="carousel">
                     <a href="#todo" class="next"> Next </a>
+                    {% block thumbnails %}
                     <ul>
-                        <li><img src="http://c759846.r46.cf2.rackcdn.com/gallery/2007/03/118244_1316217579_gallery_image_116446.jpg" alt="" /></li>
-                        <li><img src="http://c759846.r46.cf2.rackcdn.com/gallery/2007/03/118276_1316217579_gallery_image_116388.jpg" alt="" /></li>
-                        <li><img src="http://c759846.r46.cf2.rackcdn.com/gallery/2007/03/118292_1316217579_gallery_image_116401.jpg" alt="" /></li>
-                        <li><img src="http://c759846.r46.cf2.rackcdn.com/gallery/2007/03/118357_1316217579_gallery_image_115760.jpg" alt="" /></li>
-                        <li><img src="http://c759846.r46.cf2.rackcdn.com/gallery/2007/03/118308_1316217579_gallery_image_115792.jpg" alt="" /></li>
-                        <li><img src="http://c759846.r46.cf2.rackcdn.com/gallery/2007/03/118324_1316217579_gallery_image_115734.jpg" alt="" /></li>
+                    {% for photo in gallery.photo_set.all %}
+
+                    {% if photo = gallery.best_photo %}
+                    <li><a href="/photo/{{photo.id}}"><img src="{{photo.filename.url}}" height="350" caption="Best!" /></a></li>
+                    {% else %}
+                    <li><a href="/photo/{{photo.id}}"><img src="{{photo.filename.url}}" height="350" /></a></li>
+                    {% endif %}
+
+                    {% endfor %}
                     </ul>
+                    <p>The best photo is the biggest one. MOAR PIXELS IS MOAR BETTER!</p>
+
+                    {% endblock thumbnails %}
                 </div>
             </section>
+        </div>
+
+        <div id="upload-form">
+        <form method="post" action="" enctype="multipart/form-data">{% csrf_token %}
+        <ul>{{ form.as_p }}
+        <li><input type="submit" value="upload" /></li></ul></form>
         </div>
 
         <script type="text/javascript" src="{{ STATIC_URL }}scripts/jquery.min.js"></script>

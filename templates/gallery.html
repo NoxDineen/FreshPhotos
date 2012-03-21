@@ -8,17 +8,17 @@
 	<p> {{gallery.description}} </p>
 
 	{% block thumbnails %}
-
+	<ul>
 	{% for photo in gallery.photo_set.all %}
 
 	{% if photo = gallery.best_photo %}
-	<a href="/photo/{{photo.id}}"><img src="{{photo.filename.url}}" height="150" caption="Best!" /></a>
+	<li><a href="/photo/{{photo.id}}"><img src="{{photo.filename.url}}" height="350" caption="Best!" /></a></li>
 	{% else %}
-	<a href="/photo/{{photo.id}}"><img src="{{photo.filename.url}}" height="150" /></a>
+	<li><a href="/photo/{{photo.id}}"><img src="{{photo.filename.url}}" height="350" /></a></li>
 	{% endif %}
 
 	{% endfor %}
-
+	</ul>
 	<p>The best photo is the biggest one. MOAR PIXELS IS MOAR BETTER!</p>
 
 	{% endblock thumbnails %}

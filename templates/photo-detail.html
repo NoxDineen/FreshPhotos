@@ -27,22 +27,23 @@
 
 		<div id='comment-form'>
 		<form method="post" action="" >{% csrf_token %}
-		<ul>
-		    {{ form.as_ul }}
-		     <li><input type="submit" value="Add my comment" /></li>
-		</ul>
+		    {{ form.as_p }}
+		     <p><input type="submit" value="Add my comment" /></p>
 		</form>
 		</div>
 
-		<div id="comments">
+		<ul id="comments">
 		{% for comment in comments %}
-		<p><a href="mailto:{{comment.email}}">{{comment.name}}</a> says: {{comment.comment}}</p>
+		<li><a href="mailto:{{comment.email}}">{{comment.name}}</a> says: {{comment.comment}}</li>
 		{% endfor %}
-		</div>
+		</ul>
 	</article>
 
 	</section>
-
 	</div>
+	<script type="text/javascript" src="{{ STATIC_URL }}scripts/jquery.min.js"></script>
+	<script type="text/javascript" src="{{ STATIC_URL }}scripts/xcrf-request.js"></script>
+	<script type="text/javascript" src="{{ STATIC_URL }}scripts/gallery.js"></script>
+
 </body>
 </html>

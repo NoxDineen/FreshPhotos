@@ -58,6 +58,7 @@ a:hover {
 #page-content {
     padding: 20px 0;
     border-top: 1px solid #0A0B0B;
+    clear: both;
 }
  
 #page-content img {
@@ -112,4 +113,12 @@ h1 {
 
 #comment-form ul {
     list-style-type: none;
+}
+
+#upload-form {
+    clear: both;
+}
+
+#upload-form ul li {
+    list-style: solid;
 }
